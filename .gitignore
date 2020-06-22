@@ -9,3 +9,4 @@
 /vendor/
 .DS_Store
 ###< symfony/framework-bundle ###
+node_modules

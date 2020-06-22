@@ -1,0 +1,14 @@
+{
+  "entrypoints": {
+    "css/dasboard": {
+      "css": [
+        "/assets/css/dasboard.css"
+      ]
+    },
+    "css/login": {
+      "css": [
+        "/assets/css/login.css"
+      ]
+    }
+  }
+}

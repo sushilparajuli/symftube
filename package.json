@@ -1,0 +1,22 @@
+{
+  "name": "symftube",
+  "version": "1.0.0",
+  "description": "Simple vlog application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushilparajuli/symftube.git"
+  },
+  "author": "Sushil Parajuli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sushilparajuli/symftube/issues"
+  },
+  "homepage": "https://github.com/sushilparajuli/symftube#readme",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.30.2"
+  }
+}

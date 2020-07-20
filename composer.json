@@ -17,7 +17,10 @@
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
-        "symfony/maker-bundle": "^1.19"
+        "symfony/debug-bundle": "5.1.*",
+        "symfony/maker-bundle": "^1.19",
+        "symfony/profiler-pack": "^1.0",
+        "symfony/var-dumper": "5.1.*"
     },
     "config": {
         "optimize-autoloader": true,

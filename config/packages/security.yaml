@@ -25,8 +25,33 @@ security:
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
 
+            form_login:
+                # The route name that login form submits to
+                check_path: login 
+                # When the user tries to access a protected page, they are redirected here
+                login_path: login 
+                # Secure the login form against CSRF
+                csrf_token_generator: security.csrf.token_manager
+                # The page users are redirect to when there is no previous page stored in the # session (for example when user access directly to login path)
+                default_target_path: admin_main_page
+                username_parameter: _email
+            
+            logout:
+                # The route name the user can go in order to logout
+                path: logout
+                # The name of the route to redirect to after logging out 
+                target: main_page
+            
+            remember_me:
+                secret: '%kernel.secret%'
+                lifetime: 604800 # 1 week in second
+                path: /
+                # always_remember_me: true # to make remember forever
+
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+
+

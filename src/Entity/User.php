@@ -56,10 +56,11 @@ class User implements UserInterface
     private $last_name;
 
     /**
-     * @Assert\NotBlank(message="Valid last name is required.")
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+     * @ORM\Column(type="string", length=45, nullable=true)
+    */
+   
     private $vimeo_api_key;
+
 
     public function getId(): ?int
     {
